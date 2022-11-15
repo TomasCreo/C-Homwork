@@ -7,9 +7,14 @@
 Console.WriteLine("Введите трехзначное число:");
 int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine($" {SecondNumber(num)} - Это вторая цифра числа {num}");
+Console.WriteLine(((num > 99) && (num < 1000)) || ((num < -99) && (num > -1000)) ? $"Вторая цифра это - {SecondNumber(num)} " : "Число не трехзначное");
 
 int SecondNumber (int number)
 { 
-    return number % 100 / 10;
+     if (number < -99)
+    {
+      number = number * -1;
+    }
+    number = number / 10 % 10;
+    return number;
 }

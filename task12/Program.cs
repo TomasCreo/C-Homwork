@@ -10,10 +10,10 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число 2");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-bool Multiplicity (int number1, int number2)
-{
-     return number1 % number2 == 0;
-}
+// bool Multiplicity (int number1, int number2)
+// {
+//      return number1 % number2 == 0;
+// }
 
 int MultiplicitySecond (int number1, int number2)
 { 

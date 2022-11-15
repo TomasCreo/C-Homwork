@@ -5,15 +5,23 @@
 // 7 -> да
 // 1 -> нет
 
-Console.WriteLine("Введите день недели:");
+Console.WriteLine("Введите цифру дня недели:");
 int num = Convert.ToInt32(Console.ReadLine());
 
-Console.WriteLine(num > 5 ? "Да, этот день выходной": "Нет, это будни");
-
-// Решение через метод слишком большое по этому оставил вариант, что выше.
-// Console.WriteLine(DayofTheWeek(num) ? "Да" : "Нет"); 
- 
-// bool DayofTheWeek(int number) 
-// { 
-//     return (number == 6) || (number == 7); 
+if (num < 1 || num > 7)
+{
+     Console.WriteLine($"Число {num} не явялется днем недели");
+}
+// else
+// {
+//     Console.WriteLine(num > 5 ? "Да, этот день выходной": "Нет, это будни");
 // }
+
+else
+{
+    Console.WriteLine(DayofTheWeek(num) ? "Да, это выходной" : "Нет, это будни"); 
+} 
+bool DayofTheWeek(int number) 
+{ 
+    return (number == 6) || (number == 7);
+}
