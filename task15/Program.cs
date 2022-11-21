@@ -25,3 +25,26 @@ bool DayofTheWeek(int number)
 { 
     return (number == 6) || (number == 7);
 }
+
+
+// Console.WriteLine("To know whether it's weekend or not, enter the day number starting from 1 to 7: ");
+//  int numberofday = Convert.ToInt32(Console.ReadLine());
+
+// int WeekDay(int day)
+// {
+//     if (day < 1 || day > 7)
+//     {
+//         Console.WriteLine("There is only 7 days in a week. Enter the real day number you need.");
+//     }
+//     else if (day > 5)
+//     {
+//         Console.WriteLine("It's a weekend. Just chill");
+//     }
+
+//     else
+//     {
+//        Console.WriteLine("It's a workday, unfortunatelly. Sorry for you, bro");
+//     }
+//     return day;
+// }
+// Console.WriteLine(WeekDay(numberofday));
