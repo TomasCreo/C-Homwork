@@ -25,4 +25,4 @@ double Distance (int xa, int ya, int za, int xb, int yb, int zb)
 } 
 double result = Distance(xa, ya, za, xb, yb, zb); 
 double resround = Math.Round(result, 2, MidpointRounding.ToZero);
-Console.WriteLine($"Расстояние между точками = {resround}");
+Console.WriteLine($"Расстояние между точками A {(xa, ya, za)} B {(xb, yb, zb)} = {resround}");
