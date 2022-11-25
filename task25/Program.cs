@@ -12,7 +12,6 @@ while (n2 < 0)
     if (n2 < 0) Console.WriteLine("Введены неверные данные");
 }
 
-
 int Degree(int number1, int number2)
 {
     int mult = 1;
