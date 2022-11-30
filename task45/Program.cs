@@ -17,7 +17,6 @@ int[] RandomArray(int size, int min, int max)
 }
 void PrintArray(int[] array)
 {
-    Random rnd = new Random();
     Console.Write($"[");
     for (int i = 0; i < array.Length; i++)
     {
