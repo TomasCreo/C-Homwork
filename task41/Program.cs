@@ -44,7 +44,7 @@ string numbers = Console.ReadLine();
 
 string[] Separation(string num)
 {
-    string[] spearator = {", "};
+    char[] spearator = {',', ' '}; // Чар работает лучше чеи строки в контексте удаления и разделения.
     string[] strlist = num.Split(spearator, StringSplitOptions.RemoveEmptyEntries);
     return strlist;
 }
