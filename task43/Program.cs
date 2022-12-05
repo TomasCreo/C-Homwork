@@ -12,13 +12,13 @@ double x2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Введите k2");
 double y2 = Convert.ToInt32(Console.ReadLine());
 
-double FindXPoint(double num1,double num2,double num3,double num4)
+double FindXPoint(double num1, double num2, double num3, double num4)
 {
-    double x = (-num3 + num1)/(-num2 + num4); 
+    double x = (-num3 + num1) / (-num2 + num4);
     return x;
 }
 double xresult = FindXPoint(x1, y1, x2, y2);
-double FindYPoint(double num1,double num2,double num3,double num4, double result)
+double FindYPoint(double num1, double num2, double num3, double num4, double result)
 {
     double y = num4 * result + num3;
     return y;
