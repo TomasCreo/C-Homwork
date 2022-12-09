@@ -43,7 +43,7 @@ int stringsize = 0;
 int columsize = 0;
 int stringIndex = 0;
 int columIndex = 0;
-while (stringsize <= 0 ||columsize <= 0 || stringIndex < 0 || columIndex < 0)
+while (stringsize <= 0 || columsize <= 0 || stringIndex < 0 || columIndex < 0)
 {
     Console.WriteLine($"Введите количество сторок");
     stringsize = Convert.ToInt32(Console.ReadLine());
@@ -53,7 +53,7 @@ while (stringsize <= 0 ||columsize <= 0 || stringIndex < 0 || columIndex < 0)
     stringIndex = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine($"Введите индекс столбца");
     columIndex = Convert.ToInt32(Console.ReadLine());
-    if (stringsize <= 0 ||columsize <= 0 || stringIndex < 0 || columIndex < 0) 
+    if (stringsize <= 0 || columsize <= 0 || stringIndex < 0 || columIndex < 0) 
     Console.WriteLine("Введены неверные данные");
 }
 int[,] array2D = RandomMatrix(stringsize, columsize, 0, 10);
